@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício 1</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
+	<style type="text/css">
+		div{
+			cursor: url('cursor.png'), auto;
+			margin:auto;
+			width:80%;
+			background-color: #1c3603;
+			border: 2em ridge #804900;
+		}
+		p{
+			text-align: center;
+			color: white;
+			font: 5em 'Beth Ellen', cursive;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p><span class="Palavra" onmouseover="mudaPalavra(0)" onmouseout="voltaPalavra(0)">Educar</span>
+			<span class="Palavra" onmouseover="mudaPalavra(1)" onmouseout="voltaPalavra(1)">Educar</span>
+			<span class="Palavra" onmouseover="mudaPalavra(2)" onmouseout="voltaPalavra(2)">Educar</span>
+		</p>
+		<p><span class="Palavra" onmouseover="mudaPalavra(3)" onmouseout="voltaPalavra(3)">Educar</span>
+		   <span class="Palavra" onmouseover="mudaPalavra(4)" onmouseout="voltaPalavra(4)">Educar</span>
+		   <span class="Palavra" onmouseover="mudaPalavra(5)" onmouseout="voltaPalavra(5)">Educar</span>
+		</p>
+	</div>
+</body>
+<script type="text/javascript">
+	function mudaPalavra(n){
+	var x = document.getElementsByClassName("Palavra");
+  	x[n].innerHTML = "Aprender";
+	}
+	function voltaPalavra(n){
+	var y = document.getElementsByClassName("Palavra");
+	y[n].innerHTML = "Educar";
+	}
+</script>
+</html>
